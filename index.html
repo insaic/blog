@@ -1,29 +1,42 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Appblur</title>
-        <link type="text/css" rel="stylesheet" href="stylesheets/reset.css"/>
-        <link type="text/css" rel="stylesheet" href="stylesheets/index.css?v=92"/>
-    </head>
-    <body>
-        <section class="page-header">
-            <h1>Appblur</h1>
-            <ul>
-                <li>
-                    <a href="/notes.html">Notes</a>
-                </li>
-                <li>
-                    <a href="/about.html">About</a>
-                </li>
-                <li>
-                    <a href="/not-jquery.html">No jQuery</a>
-                </li>
-                <li>
-                    <a href="/swiftui.html">SwiftUI</a>
-                </li>
-            </ul>
-        </section>
-    </body>
-</html>
+---
+layout: page
+description: "Your feature, your way."
+---
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a target="_blank" href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:120 }}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
