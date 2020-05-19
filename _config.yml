@@ -34,7 +34,6 @@ sidebar-about-description: "" # 你的简介，如果上面设置false，这里�
 sidebar-avatar: /img/logo.jpg # 你的头像图片的地址
 
 # ---- 3、社交账号配置（SNS settings）
-
 RSS: false  # 是否启用RSS订阅
 
 #weibo_username:     meswx      # 签名加了"#"号就表示，注释掉了，不设置微博账号
