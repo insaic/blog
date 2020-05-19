@@ -115,7 +115,7 @@ gitalk:
   enable: true #是否开启Gitalk评论
   clientID: 93b22d15ba53921d8cf4 #生成的clientID
   clientSecret: 0aa14d36e28f9cd4bd03da2a28417be42fea0f52 #生成的clientSecret
-  repo: https://github.com/insaic/blog.git #仓库名称
+  repo: blog #仓库名称
   owner: yatelu1 #github用户名
   admin: yatelu1
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
