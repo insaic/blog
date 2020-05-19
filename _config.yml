@@ -112,13 +112,13 @@ page-mathjax: false
 
 # 评论系统：Gitalk(https://github.com/gitalk/gitalk)
 gitalk:
-  # enable: true #是否开启Gitalk评论
-  # clientID: 73b05209d243dc91289d #生成的clientID
-  # clientSecret: 048bc73b2f47a2ed0681a6543d88669313e6c052 #生成的clientSecret
-  # repo: meswx.github.io #仓库名称
-  # owner: meswx #github用户名
-  # admin: meswx
-  # distractionFreeMode: true #是否启用类似FB的阴影遮罩
+  enable: true #是否开启Gitalk评论
+  clientID: 93b22d15ba53921d8cf4 #生成的clientID
+  clientSecret: 0aa14d36e28f9cd4bd03da2a28417be42fea0f52 #生成的clientSecret
+  repo: https://github.com/insaic/blog.git #仓库名称
+  owner: yatelu1 #github用户名
+  admin: yatelu1
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 # 统计，网站分析
 
