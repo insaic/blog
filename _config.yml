@@ -130,3 +130,5 @@ gitalk:
 # ga_trac#k_id: 'UA-145463114-1' # 你用Google账号去注册一个就会给你一个这样的id，Format: UA-xxxxxx-xx
 ga_domain: auto     # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
+
+theme: jekyll-theme-architect
