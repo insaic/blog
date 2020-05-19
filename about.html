@@ -1,16 +1,16 @@
 ---
 layout: page
-title: "About Me"
+title: "About US"
 description: "仰望星空，脚踏实地"
 header-img: "img/post-bg-rwd.jpg"
 multilingual: true
 ---
 
 <!-- Language Selector -->
-<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
     <option value="1"> 英文 English </option>
-</select>
+</select> -->
 
 <!-- Chinese Version -->
 <div class="zh post-container">
@@ -18,13 +18,10 @@ multilingual: true
     <blockquote><p>写代码，码文字，发现更大的世界<br>
     不要让任何人否定你的与众不同</p></blockquote>
 
-    <p>Hey，我是祥仔，千千万万程序员中一员，抱谷歌baba大腿😏。</p>
+    <p>这里是上汽保险前端团队博客，在这里我们只聊技术💻，不谈风月🌛</p>
 
-    <p>我想告诉大家的是，不要老黑程序员，绝大多数程序员既单纯又有想法，绝对是一个潜力股，值得长期持有。</p>
 
-    <p>说来惭愧，入行3年多了，技术没有太大的长进，也没有拿的出手的开源项目，却一直做着成为万人追捧的大牛的梦😂😂😂</p>
-
-    <p>👉诺，因此我最近利用 <a target="_blank" href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建了 个人博客。以后打算好好经营，用心记录，不为取悦于人，只为分享!</p>
+    <p>利用 <a target="_blank" href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建了 博客。以后打算好好经营，用心记录，不为取悦于人，只为分享!</p>
 
     <p></p>
     
@@ -33,76 +30,11 @@ multilingual: true
     <ul>
         <li><a target="_blank" href="https://github.com">GitHub</a></li>
         <li><a target="_blank" href="http://jekyll.com.cn/">jekyll</a></li>
-        <li><a target="_blank" href="http://huangxuan.me/">Hux</a></li> 
         <li><a href="#">...</a></li>
     </ul>
 </div>
 
-<!-- English Version -->
-<div class="en post-container">
 
-    <blockquote><p>Write code, Write article, Discover the bigger world<br>
-    Don't let anyone tell you different</p></blockquote>
-
-    <p>Hey, I'm xiang zai, one of the millions of programmers, holding Google baba thigh😏.</p>
-    
-    <p>What I want to tell you is, do not old black programmer, the vast majority of programmers both simple and have ideas, is definitely a potential stock, worth holding for a long time.</p>
-
-    <p>I am ashamed to say that I have been in the industry for more than 3 years, but the technology has not improved much, and the open source projects that have not been taken have been dreaming of becoming a big cow pursued by ten thousand people😂😂😂.</p>
-
-    <p>👉, so I use <a target="_blank" href="https://pages.github.com/">GitHub Pages</a> and <a target="_blank" href="http://jekyll.com.cn/">Jekyll</a> build my blog recently. I plan to do a good job in the future, record carefully, not to please others, just to share!</p>
-    
-    <p></p>
-
-    <h5>Thanks</h5>
-
-    <ul>
-        <li><a target="_blank" href="https://github.com">GitHub</a></li>
-        <li><a target="_blank" href="http://jekyll.com.cn/">jekyll</a></li>
-        <li><a target="_blank" href="http://huangxuan.me/">Hux</a></li> 
-        <li><a href="#">...</a></li>
-    </ul>
-</div>
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
-
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
-
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
-    }
-
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
-    }
-
-    // init
-    _render();
-</script>
 
 
 <!-- Gitalk 评论 start  -->

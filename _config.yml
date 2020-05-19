@@ -54,10 +54,10 @@ featured-condition-size: 0        # 相同标签数量大于这个数，才会�
 # 好友链接部分（Friends）
 
 friends: [
-    # {
-    #     title: "Hux Blog",              # 要显示的名称
-    #     href: "http://huangxuan.me/"   # 好友的博客链接
-    # },
+    {
+        title: "Neon",              # 要显示的名称
+        href: "https://insaic.github.io/neon/"   # 好友的博客链接
+    },
     # {
     #     title: "BY Blog",              # 要显示的名称
     #     href: "https://github.com/qiubaiying"    # 好友的博客链接
