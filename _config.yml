@@ -55,7 +55,7 @@ featured-condition-size: 0        # 相同标签数量大于这个数，才会�
 
 friends: [
     {
-        title: "Neon",              # 要显示的名称
+        title: "上汽保险移动端UI框架-Neon",              # 要显示的名称
         href: "https://insaic.github.io/neon/"   # 好友的博客链接
     },
     # {
