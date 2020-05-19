@@ -16,15 +16,15 @@
 
 # ---- 1、基本配置
 
-title: Meswx Blog # 你的博客名称，如：唐太宗的博客，以下配置如无特别说明，英文中文都OK
-SEOTitle: 祥仔的博客 | Meswx Blog # 这个是显示在浏览器Tab上的标题，如未指定该配置参数，系统会默认显示上面的title
+title: 上汽保险前端 # 你的博客名称，如：唐太宗的博客，以下配置如无特别说明，英文中文都OK
+SEOTitle: 上汽保险前端的博客 | Insaic FE Blog # 这个是显示在浏览器Tab上的标题，如未指定该配置参数，系统会默认显示上面的title
 header-img: img/home-bg_meswx.jpg # 这个定义了博客首页的顶部背景图，可以根据自己的喜好，设置不同的图
 email: meswx@outlook.com # 你的邮箱，如：84787843@qq.com，右边头像栏底下显示
-description: "Your feature, your way. | Android Developer, Software Engineer | 这里是 @Meswx祥仔 的个人博客，互联网发声专属领地。" # 你的博客描述，这个内容不会显示在博客界面上，可以随便写点
-keyword: "祥仔, Meswx, @meswx, 祥仔的博客, 个人博客, 设计, Meswx Blog, Github, Jekyll, Developer" # 这里填博客的索引关键字，最好是英文，如：iPhone，多个关键字使用英文状态下的逗号隔开 
-url: "http://meswx.github.io" # 这里填我们GitHub账号的仓库（repo）名称，如：http://xxx.github.io
+description: "Your feature, your way. | Android Developer, Software Engineer " # 你的博客描述，这个内容不会显示在博客界面上，可以随便写点
+keyword: "上汽保险, 团队博客, 设计, 前端, Github, Jekyll, Developer" # 这里填博客的索引关键字，最好是英文，如：iPhone，多个关键字使用英文状态下的逗号隔开 
+url: "http://blog.insaic.me/" # 这里填我们GitHub账号的仓库（repo）名称，如：http://xxx.github.io
 baseurl: "" # 可忽略，官方解释：for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/Meswx/meswx.github.io.git" 
+github_repo: "https://github.com/insaic/blog.git" 
 # 你的GitHub仓库全名称（you code repository）,注意结尾要加上.git，如：https://github.com/zhangsan/zhangsan.github.io.git
 
 # ---- 2、侧边栏配置（Sidebar settings）
@@ -37,12 +37,12 @@ sidebar-avatar: /img/avatar-meswx.jpg # 你的头像图片的地址
 
 RSS: false  # 是否启用RSS订阅
 
-weibo_username:     meswx      # 签名加了"#"号就表示，注释掉了，不设置微博账号
-zhihu_username:     meswx      # 知乎，找到个人知乎主页，如：https://www.zhihu.com/people/zhangsan，这里的“zhangsan”就是你要填在这里的，下面的都类似
-github_username:    meswx      # GitHub
+#weibo_username:     meswx      # 签名加了"#"号就表示，注释掉了，不设置微博账号
+#zhihu_username:     meswx      # 知乎，找到个人知乎主页，如：https://www.zhihu.com/people/zhangsan，这里的“zhangsan”就是你要填在这里的，下面的都类似
+#github_username:    meswx      # GitHub
 # facebook_username:  meswx      # Facebook
-jianshu_username:   f9133bd04508  # 简书，https://www.jianshu.com/u/f9133bd04508，简书链接前面固定部分已经代码中写好，你只需要把你的id填到这
-twitter_username:   mieswx    # Twitter
+#jianshu_username:   f9133bd04508  # 简书，https://www.jianshu.com/u/f9133bd04508，简书链接前面固定部分已经代码中写好，你只需要把你的id填到这
+#twitter_username:   mieswx    # Twitter
 
 # 想加更多社交账号的只能看代码了，一般来说上面都够用了，如有需要，请联系我：meswx@outlook.com
 
@@ -54,18 +54,18 @@ featured-condition-size: 0        # 相同标签数量大于这个数，才会�
 # 好友链接部分（Friends）
 
 friends: [
-    {
-        title: "Hux Blog",              # 要显示的名称
-        href: "http://huangxuan.me/"   # 好友的博客链接
-    },
-    {
-        title: "BY Blog",              # 要显示的名称
-        href: "https://github.com/qiubaiying"    # 好友的博客链接
-    },
-    {
-        title: "Clean Blog",              # 要显示的名称
-        href: "http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/"    # 好友的博客链接
-    }
+    # {
+    #     title: "Hux Blog",              # 要显示的名称
+    #     href: "http://huangxuan.me/"   # 好友的博客链接
+    # },
+    # {
+    #     title: "BY Blog",              # 要显示的名称
+    #     href: "https://github.com/qiubaiying"    # 好友的博客链接
+    # },
+    # {
+    #     title: "Clean Blog",              # 要显示的名称
+    #     href: "http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/"    # 好友的博客链接
+    # }
 
     # 可以无限加，注意数组语法，如果再加第3个，则需要在第2个的花括号“}“后面加上英文的逗号","
 ]
@@ -113,20 +113,20 @@ page-mathjax: false
 
 # 评论系统：Gitalk(https://github.com/gitalk/gitalk)
 gitalk:
-  enable: true #是否开启Gitalk评论
-  clientID: 73b05209d243dc91289d #生成的clientID
-  clientSecret: 048bc73b2f47a2ed0681a6543d88669313e6c052 #生成的clientSecret
-  repo: meswx.github.io #仓库名称
-  owner: meswx #github用户名
-  admin: meswx
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+  # enable: true #是否开启Gitalk评论
+  # clientID: 73b05209d243dc91289d #生成的clientID
+  # clientSecret: 048bc73b2f47a2ed0681a6543d88669313e6c052 #生成的clientSecret
+  # repo: meswx.github.io #仓库名称
+  # owner: meswx #github用户名
+  # admin: meswx
+  # distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 # 统计，网站分析
 
 # Baidu Analytics
-ba_track_id: b8c1a7ce2806ce65e15f568ff0aef534 # 自己去百度统计注册，把你注册的track_id填这里
+ba_tra#ck_id: b8c1a7ce2806ce65e15f568ff0aef534 # 自己去百度统计注册，把你注册的track_id填这里
 
 # Google Analytics
-ga_track_id: 'UA-145463114-1' # 你用Google账号去注册一个就会给你一个这样的id，Format: UA-xxxxxx-xx
+ga_trac#k_id: 'UA-145463114-1' # 你用Google账号去注册一个就会给你一个这样的id，Format: UA-xxxxxx-xx
 ga_domain: auto     # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
