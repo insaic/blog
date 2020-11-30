@@ -7,9 +7,7 @@ author:     yatelu1
 header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:
-    - Homebrew
-    - brew
-    - mac
+    - git
     - 效率
 ---
 
