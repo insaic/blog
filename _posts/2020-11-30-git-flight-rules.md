@@ -1,3 +1,19 @@
+---
+layout:     post
+title:      Git飞行规则(Flight Rules)
+subtitle:   这是一篇给宇航员（这里就是指使用Git的程序员们）的指南，用来指导问题出现后的应对之法。
+date:       2020-11-30
+author:     yatelu1
+header-img: img/post-bg-coffee.jpeg
+catalog: true
+tags:
+    - Homebrew
+    - brew
+    - mac
+    - 效率
+---
+
+
 # Git飞行规则(Flight Rules)
 
 
