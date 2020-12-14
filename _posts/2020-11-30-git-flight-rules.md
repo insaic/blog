@@ -1076,4 +1076,4 @@ $ git reset --hard 0254ea7
 
 然后使用git reset就可以把master改回到之前的commit，这提供了一个在历史被意外更改情况下的安全网。
 
-([摘自](https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog)).
+([摘自 https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog](https://www.atlassian.com/git/tutorials/rewriting-history/git-reflog)).
